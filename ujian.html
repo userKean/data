@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="icon" href="Logo.png">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Clients</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="content">
+        <h1><center>Form Login</center></h1>
+        <div class="login">
+            <form action="connect.php" method="post">
+                <div class="label">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <br>
+                <div class="label">
+                    <label for="pass">Password</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="pass" id="pass" placeholder="Password">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<style>
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .navbar ul {
+        list-style-type: none;
+    }
+    .navbar a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navbar .active {
+        background-color: green;
+        color: white;
+    }
+    .navbar a:hover:not(.active){
+        background-color: grey;
+        color: #f2f2f2;
+    }
+    .sidebar {
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #444;
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+    }
+    .sidebar a {
+        display: block;
+        color: #ffff;
+        padding: 16px;
+        text-decoration: none;
+    }
+    .sidebar .active {
+        background-color: green;
+        color: #f1f1f1;
+        width: 200px;
+    }
+    .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: #f1f1f1;
+    }
+    .content {
+        margin-top: 50px;
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 100px;
+    }
+    input[type=submit] {
+        background-color: gray;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type=submit]:hover {
+        background-color: green;
+        color: white;
+    }
+    .login {
+        border-radius: 25px;
+        background-color: cyan;
+        padding: 30px 20px;
+        margin: auto;
+        width: 30%;
+    }
+</style>
+</html>
